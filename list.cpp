@@ -9,7 +9,7 @@ void List(){
     ls.emplace_front(6);
     // ls now: 6 5 2 4
 
-    auto it = ls.begin();
+    auto it = ls.begin();// inserting at specific position
     advance(it, 2);            // move iterator to 3rd element (points to 2)
     ls.insert(it, 50);         // insert 50 before it -> 6 5 50 2 4
     ls.insert(it, 3, 100);     // insert three 100s before it
@@ -38,6 +38,10 @@ void List(){
     for (int x : ls) {
         cout << x << " for " << endl;
     }
+
+    for_each(ls.begin(), ls.end(), [](int x){ //STL algorithm + lambda function combo.
+    cout << x << " ";
+                 });
 }
 
 int main(){
