@@ -10,7 +10,7 @@ void largestElement1(){ //method 1 using STL
     cout<<"the maximum element in the array is : "<<maxi<<endl;
 }
 
-void largestElement2(int arr[], int n){// method 2
+void largestElement2(int arr[], int n){// method 2 -OPTIMAL approach O(N)
     int maxEl=arr[0];
     for (int i=1;i<n;i++){
         if(arr[i]>maxEl){
@@ -20,7 +20,7 @@ void largestElement2(int arr[], int n){// method 2
     cout<<"the maximum element in the array is : "<<maxEl<<endl;
 }
 
-void largestElement3(){//method 3 using sorting
+void largestElement3(){//method 3 using sorting: o(NlogN)
     vector<int> my={3,7,2,9,1,0,3};
     int s=sizeof(my)/sizeof(my[0]);
     sort(my.begin(),my.end(),greater<int>());
