@@ -4,7 +4,7 @@
 using namespace std;
 
 void largestElement1(){ //method 1 using STL
-    int a[]={3,6,1,9,4,5};
+    int a[]={3,6,1,9,4,8};
     int n=sizeof(a)/sizeof(a[0]);
     int maxi=*max_element(a,a+n);
     cout<<"the maximum element in the array is : "<<maxi<<endl;
