@@ -1,3 +1,5 @@
+//Left Rotate an array by 1 place
+
 #include<bits/stdc++.h>
 using namespace std;
 
