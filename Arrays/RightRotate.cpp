@@ -1,3 +1,5 @@
+//right rotating an array by k places
+
 #include<bits/stdc++.h>
 using namespace std;
 
