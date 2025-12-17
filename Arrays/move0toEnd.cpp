@@ -35,6 +35,8 @@ void move0ToEnd2(vector<int>& arr) { //*** method 2: OPTIMAL approach using two 
             break;
         }
     }
+    if (j==-1) return; // no 0s in the array
+    
     for(int i=j+1;i<n;i++){
         if (arr[i]!=0){
             swap(arr[i],arr[j]);
