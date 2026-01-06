@@ -1,4 +1,4 @@
-// find the maximum profit from buying and selling a stock
+// find the maximum profit from buying and selling a stock- DP approach
 #include <bits/stdc++.h>
 using namespace std;
 
