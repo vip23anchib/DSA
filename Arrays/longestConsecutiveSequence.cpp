@@ -1,1 +1,0 @@
-// finding the longest consecutive sequence in an unsorted array

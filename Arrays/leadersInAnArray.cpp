@@ -20,7 +20,7 @@ void leaderBruteForce(const vector<int>& arr) {// o(N^2) time and o(1) space
 }
 
 
-vector<int>  superiorElements(vector<int>& a) {
+void leadersOptimal(vector<int>& a) {
     // O(N)
     vector<int> ans;
     int maxi = INT_MIN;
@@ -37,5 +37,21 @@ vector<int>  superiorElements(vector<int>& a) {
 
     // O(N log N)
     sort(ans.begin(), ans.end());
-    return ans;
+    for (auto i : ans) {
+        cout << i << " ";
+    }
+}
+
+int main () {
+    vector<int> arr = {16, 17, 4, 3, 5, 2};
+    
+    cout << "Leaders (Brute Force): ";
+    leaderBruteForce(arr);
+    cout << endl;
+    
+    cout << "Leaders (Optimal): ";
+    leadersOptimal(arr);
+    cout << endl;
+    
+    return 0;
 }
