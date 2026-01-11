@@ -4,8 +4,8 @@ using namespace std;
 class Solution {
 public:
     vector<int> spiralOrder(vector<vector<int>>& matrix) {
-        int m = matrix.size();
-        int n = matrix[0].size();
+        int m = matrix.size();//prints rows
+        int n = matrix[0].size();// prints columns
 
         int top = 0, bottom = m - 1;
         int left = 0, right = n - 1;
@@ -25,14 +25,14 @@ public:
             right--;
 
             // right → left
-            if (top <= bottom) {
+            if (top <= bottom) {//checks edge case for single row
                 for (int j = right; j >= left; j--)
                     ans.push_back(matrix[bottom][j]);
                 bottom--;
             }
 
             // bottom → top
-            if (left <= right) {
+            if (left <= right) {//checks edge case for single column
                 for (int i = bottom; i >= top; i--)
                     ans.push_back(matrix[i][left]);
                 left++;
