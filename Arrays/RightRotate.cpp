@@ -25,7 +25,7 @@ void rightRotateBykPlaces1(vector<int>& arr, int k) { //method 1: brute force
     }
 }
 
-void rightRotateByKPlaces2(vector<int>& arr, int k) {
+void rightRotateByKPlaces2(vector<int>& arr, int k) {//optimal method: using reverse
     int n = arr.size();
     k = k % n;
 
